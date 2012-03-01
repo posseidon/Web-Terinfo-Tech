@@ -1,0 +1,19 @@
+1. JSHint
+  // Standalone run
+  jshint Conventions/conv01.js  --config Testing/jshint/config.json
+  
+2. Node-Unit
+  // Standalone run
+  nodeunit javascript_file
+
+3. Google Closure Compiler
+  // Interactive Mode
+  java -jar compiler.jar
+  
+  // Compile multiple files
+  // java -jar compiler.jar --js=in1.js --js=in2.js ... --js_output_file=out.js
+  java -jar compiler.jar --js=../../Testing/dummy.js --js_output_file=out.js
+  
+4. JSDoc
+  // Standalone run
+  java -jar jsrun.jar app/run.js -a -t=templates/jsdoc -d=../../../Docs ../../../Testing/dummy.js
