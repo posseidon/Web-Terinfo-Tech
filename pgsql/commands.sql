@@ -61,7 +61,7 @@ insert into magyarorszag(level, level_desc, name, region) select level::integer,
 ---- Kisterseg
 insert into magyarorszag(level, level_desc, name, region) select level::integer, 'Kistérség', name, st_transform(geom, 4326) from boundary where level = '7';
 ---- Telepules
-insert into magyarorszag(level, level_desc, name, region) select level::integer, 'Kistérség', name, st_transform(geom, 4326) from boundary where level = '8';
+insert into magyarorszag(level, level_desc, name, region) select level::integer, 'Település', name, st_transform(geom, 4326) from boundary where level = '8';
 -- 3. Dump table content out with pgsql2shp
 pgsql2shp -f magyarorszag.shp -u postgresql -b -g region hungary magyarorszag
 -- 4. Load data into Brfk database using shp2pgsql
