@@ -1,0 +1,14 @@
+#toolbar{
+  position: absolute;
+  top:   1em;
+  right: 5em;
+  width: 200px;
+  z-index: 1000;
+  color: #52ADDA;
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 0 0 0 0;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
